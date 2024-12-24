@@ -99,7 +99,7 @@ public class ReservationService : IReservationService
 
     private async Task<decimal> CalculatePrice(int screeningId)
     {
-        // Basit bir fiyat hesaplama örneği
+        // Fiyat hesaplama 
         var screening = await _context.Screenings
             .Include(s => s.Movie)
             .FirstOrDefaultAsync(s => s.Id == screeningId);

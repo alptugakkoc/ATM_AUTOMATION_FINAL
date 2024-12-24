@@ -17,7 +17,7 @@ public class CinemaContext : DbContext
     {
         base.OnModelCreating(modelBuilder);
 
-        // İlişkileri tanımlayalım
+        // İlişkiler
         modelBuilder.Entity<Screening>()
             .HasOne(s => s.Movie)
             .WithMany(m => m.Screenings)

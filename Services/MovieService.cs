@@ -67,5 +67,5 @@ public class MovieService : IMovieService
         };
     }
 
-    // Diğer metodlar...
+    
 } 
